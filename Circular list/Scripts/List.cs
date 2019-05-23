@@ -11,11 +11,11 @@ public class List : IEnumerable
 
     public void Add(int data)
     {
-        if (data>0)
+        if (data > 0)
         {
             AddFirst(data);
         }
-        else if (data==0)
+        else if (data == 0)
         {
             AddAfterPositive(data);
         }
@@ -23,7 +23,7 @@ public class List : IEnumerable
         {
             AddLast(data);
         }
-        
+
     }
 
     /// <summary>
@@ -123,7 +123,7 @@ public class List : IEnumerable
             lastPositive = element;
         }
         element.Next = head;
-        head = element;        
+        head = element;
         if (Count == 0)
         {
             tail = head;
@@ -166,7 +166,7 @@ public class List : IEnumerable
         }
         Count++;
     }
-   
+
     /// <summary>
     /// Возвращает первый элемент, у которого Next отрицательный.
     /// Если элемет последний - вызывает исключение.
@@ -184,7 +184,7 @@ public class List : IEnumerable
             FindLastZeroElement(element.Next);
         }
         return element;
-        
+
     }
 
     // Реализация foreach.

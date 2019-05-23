@@ -7,7 +7,7 @@ public class Program
         List list = new List();
         bool isInt;
         bool stop = false;
-                
+
         //Начальное добавление элементов
         Console.WriteLine("Введите элементы для заполнения списка по одному.");
         Console.WriteLine("Чтобы прекратить ввод введите не число.");
@@ -18,7 +18,7 @@ public class Program
             if (isInt)
             {
                 list.Add(data);
-            }                
+            }
         } while (isInt == true);
         Console.WriteLine("Ввод окончен.");
 
