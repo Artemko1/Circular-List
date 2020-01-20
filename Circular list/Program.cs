@@ -40,8 +40,7 @@ public class Program
             {
                 Console.WriteLine("Выбрано Удаление. Напишите число для удаления.");
                 Console.Write("Число: ");
-                isInt = ParseInputToInt(out int data);
-                if (isInt)
+                if (ParseInputToInt(out int data))
                 {
                     list.Remove(data);
                 }
@@ -50,8 +49,7 @@ public class Program
             {
                 Console.WriteLine("Выбран Поиск. Напишите число для поиска.");
                 Console.Write("Число: ");
-                isInt = ParseInputToInt(out int data);
-                if (isInt)
+                if (ParseInputToInt(out int data))
                 {
                     if (list.Contains(data))
                     {
